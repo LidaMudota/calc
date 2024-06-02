@@ -1,0 +1,9 @@
+index.php
+node_modules/
+.vscode/
+dist/
+.DS_Store
+personal_data.txt
+logs/
+debug/
+executable_file

@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'UQB';
+    src: url('../font/ukij-qara-bold.ttf') format('truetype');
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: "UQB", Arial, Helvetica, sans-serif;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.card {
+    border: 2px solid #229000;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to bottom right, #441229, #000000);
+}
+
+.input-window {
+    text-align: right;
+    font-size: 2em;
+    border: none;
+    background-color: transparent;
+    margin-bottom: 10px;
+    font-family: "UQB", Arial, Helvetica, sans-serif;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    border-radius: 10px;
+    width: 75px;
+    height: 75px;
+    font-size: 1.5em;
+    transition: box-shadow 0.4s;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 15px 0px rgba(155, 0, 194, 0.9);
+    animation: animate 4s linear infinite;
+    border: none;
+    font-size: 19px;
+    transform: scale(1.05, 1.05);
+    background: linear-gradient(90deg,#5f03f4 50%, #000000 75%, #5f03f4);
+    background-size: 400%;
+    color: #fff;
+    transition: background 0.4s;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
